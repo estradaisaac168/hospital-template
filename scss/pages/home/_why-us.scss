@@ -1,0 +1,67 @@
+@use '../../base/variables' as v;
+@use '../../base/mixins' as m;
+
+
+// WHY-US
+
+.why-us {
+
+    // GRID
+    .grid-why-us {
+        display: grid;
+        gap: 2rem;
+
+        @include m.breakpoint-up(md) {
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include m.breakpoint-up(lg) {
+            grid-template-rows: unset;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+        }
+
+        .card {
+            border: none;
+            background-color: v.$secondary-color;
+            transition: transform 0.3s ease;
+
+            padding: 3rem;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @include m.breakpoint-up(md){
+                padding: 1rem;
+            }
+
+            @include m.breakpoint-up(xl){
+                padding: 1.5rem;
+            }
+
+
+            &:hover {
+                transform: translateY(-1px);
+                background: darken(v.$secondary-color, 5%);
+                transition: all .3s ease-out;
+            }
+
+            &-icon {
+                font-size: 3.5rem;
+                color: v.$white;
+            }
+
+            .card-title h3,
+            .card-text{
+                color: v.$white;
+            }
+
+        }
+    }
+
+}
+
+
+// END WHY-US
