@@ -1,0 +1,41 @@
+@use '../base/variables' as v;
+
+
+// MIXIN BREAK POINT
+@mixin breakpoint-up($breakpoint) {
+    @if $breakpoint ==xs {
+        @media (min-width: #{v.$breakpoint-xs}) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint ==sm {
+        @media (min-width: #{v.$breakpoint-sm}) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint ==md {
+        @media (min-width: #{v.$breakpoint-md}) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint ==lg {
+        @media (min-width: #{v.$breakpoint-lg}) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint ==xl {
+        @media (min-width: #{v.$breakpoint-xl}) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint ==xxl {
+        @media (min-width: #{v.$breakpoint-xxl}) {
+            @content;
+        }
+    }
+}

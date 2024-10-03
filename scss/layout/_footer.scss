@@ -1,0 +1,78 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+// FOOTER
+.footer {
+
+    background-color: v.$tertiary-color;
+
+    .footer-grid {
+        display: grid;
+        gap: 2rem;
+
+        @include m.breakpoint-up(md) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+
+        .useful-links {
+
+            color: v.$primary-color;
+
+            ul {
+                li{
+                    a{
+                        color: v.$accent-color;
+                    }
+                }
+            }
+        }
+
+
+        .footer-pay {
+            color: v.$primary-color;
+
+            img {
+                width: 20rem;
+            }
+        }
+
+
+        .social-links {
+            color: v.$primary-color;
+
+            .social-content {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                a {
+                    color: v.$accent-color;
+                    font-size: 2rem;
+
+                    &:hover {
+                        color: lighten(v.$accent-color, 10%)
+                    }
+                }
+            }
+
+        }
+
+
+    }
+
+
+    .footer-copyright {
+        width: 100%;
+        background-color: darken(v.$accent-color, 5%);
+        padding: 1rem 0;
+        text-align: center;
+
+        p {
+            margin: 0;
+            font-size: 1.2rem;
+            color: v.$white;
+        }
+    }
+
+}

@@ -1,0 +1,31 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+
+.btn-up {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  background-color: transparent;
+  // background-color: v.$primary-color;
+  text-align: center;
+  line-height: 65px;
+  border: none;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 60px;
+  text-decoration: none;
+  // color: white;
+  color:  v.$primary-color;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: darken(v.$primary-color, 10%);
+
+  }
+
+}

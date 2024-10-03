@@ -1,0 +1,60 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+
+// NAVBAR
+.navbar {
+
+    padding: 1.2rem 0;
+    background-color: v.$accent-color;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+
+    // ICON MENU NAVBAR
+    .navbar-toggler {
+        box-shadow: none !important;
+        border: none;
+    }
+
+    // COLOR LINKS
+    .navbar-nav{
+
+        .nav-item{
+
+            .nav-link{
+                color: v.$white;
+
+                &:hover{
+                    color: v.$primary-color;
+                }
+            }
+
+        }
+
+        .dropdown-menu{
+            animation: .5s slideup;
+
+            .dropdown-item{
+                color: v.$accent-color;
+            }
+        }
+    
+        @keyframes slideup {
+            from{ transform: translateY(10%); }
+            to{ transform: translateY(0%); }
+        }
+    }
+
+    // CUSTOM BUTTON
+    .btn-nav-custom {
+        width: 100%;
+        background-color: v.$red;
+
+        &:hover{
+            background-color: lighten(v.$red, 5%);
+        }
+    }
+}
+
+
+// END NAVBAR

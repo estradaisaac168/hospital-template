@@ -1,0 +1,28 @@
+.title,
+.description {
+    opacity: 0;
+    /* El título empieza oculto */
+    transform: translateY(50px);
+    /* Lo desplazamos hacia abajo */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.title.show,
+.description.show {
+    opacity: 1;
+    /* Aparece */
+    transform: translateY(0);
+    /* Se posiciona en su lugar */
+}
+
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}

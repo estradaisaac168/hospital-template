@@ -1,0 +1,45 @@
+@use '../base/variables' as v;
+
+
+$theme-colors: (
+    "primary": v.$primary-color,
+    "secondary": v.$secondary-color
+);
+
+// Create your own map
+$custom-colors: (
+    "tertiary": v.$tertiary-color,
+    "accent": v.$accent-color,
+    "red":v.$red,
+    "grey": v.$grey
+);
+
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+$font-family-sans-serif: v.$font-secondary;
+$font-family-monospace: v.$font-primary;
+
+//NAVBAR
+$navbar-dark-color: rgba(v.$white, .55);
+$navbar-toggler-padding-x: 0;
+$navbar-dark-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+$navbar-toggler-font-size: 1.5rem;
+
+// ACCORDION CUSTOM
+$accordion-button-bg: v.$primary-color;
+$accordion-button-color: v.$white;
+$accordion-button-active-bg: v.$primary-color;
+$accordion-button-active-color: v.$white;
+$accordion-button-focus-box-shadow: none;
+
+$accordion-icon-color: v.$white;
+$accordion-icon-active-color: v.$white;
+
+$accordion-button-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#{$accordion-icon-color}' class='bi bi-plus-circle' viewBox='0 0 16 16'%3E%3Cpath d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16'/%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4'/%3E%3C/svg%3E");
+$accordion-button-active-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#{$accordion-icon-active-color}' class='bi bi-dash-circle' viewBox='0 0 16 16'%3E%3Cpath d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16'/%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8'/%3E%3C/svg%3E");
+
+
+
+@import "../../bootstrap/scss/bootstrap.scss";
