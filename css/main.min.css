@@ -12053,6 +12053,37 @@ p {
   }
 }
 
+.services .grid-services {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2.5rem;
+}
+.services .grid-services .card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  border: none;
+}
+.services .grid-services .card .image-container {
+  position: relative;
+}
+.services .grid-services .card .image-container img {
+  transition: transform 0.3s ease;
+  opacity: 0.9;
+}
+.services .grid-services .card .image-container img:hover {
+  transform: scale(1.05);
+}
+.services .grid-services .card .card-title {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  color: #FFFFFF;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.8rem 1.3rem;
+  border-radius: 0.5rem;
+}
+
 .hero-section {
   position: relative;
   background: url("../img/test.webp") no-repeat center center/cover;
