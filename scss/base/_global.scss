@@ -6,6 +6,21 @@ html {
     scroll-behavior: smooth;
 }
 
+body{
+    background-color: v.$tertiary-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: v.$grey;
+}
+
+.text-description {
+    color: v.$grey-light; 
+}
+
+p {
+    color: v.$grey;
+}
 
 .section {
     padding: 3rem 0 0 0;

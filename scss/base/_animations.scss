@@ -26,3 +26,21 @@
         opacity: 1;
     }
 }
+
+
+
+// ANIMATION DROPDOWN-MENU
+
+.dropdown-animation{
+    animation: .5s slideup;
+}
+
+@keyframes slideup {
+    from {
+        transform: translateY(10%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}

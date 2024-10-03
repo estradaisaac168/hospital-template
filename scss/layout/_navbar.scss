@@ -5,44 +5,73 @@
 // NAVBAR
 .navbar {
 
-    padding: 1.2rem 0;
     background-color: v.$accent-color;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 
+    @include m.breakpoint-up(lg) {
+        padding: 0;
+    }
+
+    //BRAND
+    .navbar-brand {
+        padding: 0 0.6em;
+        font-size: 1.5em;
+        font-weight: 700;
+
+        @include m.breakpoint-up(lg) {
+            padding: 0 0.8em;
+        }
+    }
+
     // ICON MENU NAVBAR
     .navbar-toggler {
+        padding: 0 0.6em;
         box-shadow: none !important;
         border: none;
     }
 
     // COLOR LINKS
-    .navbar-nav{
+    .navbar-nav {
 
-        .nav-item{
+        .nav-item {
 
-            .nav-link{
+            .nav-link {
                 color: v.$white;
+                padding: 0.6em;
+                font-size: 1.2em;
+                transition: all .5s;
 
-                &:hover{
-                    color: v.$primary-color;
+                &:hover {
+                    background-color: v.$primary-color;
+                    color: v.$white;
+                }
+
+                @include m.breakpoint-up(lg) {
+                    padding: 1em 0.7em;
                 }
             }
 
         }
 
-        .dropdown-menu{
-            animation: .5s slideup;
+        //DROPDOWN
+        .dropdown-menu {
+            // animation: .5s slideup;
 
-            .dropdown-item{
+            .dropdown-item {
                 color: v.$accent-color;
             }
         }
-    
-        @keyframes slideup {
-            from{ transform: translateY(10%); }
-            to{ transform: translateY(0%); }
-        }
+
+        // @keyframes slideup {
+        //     from {
+        //         transform: translateY(10%);
+        //     }
+
+        //     to {
+        //         transform: translateY(0%);
+        //     }
+        // }
     }
 
     // CUSTOM BUTTON
@@ -50,7 +79,7 @@
         width: 100%;
         background-color: v.$red;
 
-        &:hover{
+        &:hover {
             background-color: lighten(v.$red, 5%);
         }
     }
