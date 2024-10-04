@@ -12384,4 +12384,54 @@ p {
 }
 .content .btn-hour-custom:hover {
   transform: translateY(-1px);
+}
+
+.fqa {
+  padding-bottom: 6rem;
+}
+.fqa .card {
+  border: none;
+}
+.fqa .card .fqa-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+@media (min-width: 768px) {
+  .fqa .card .fqa-grid {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+.fqa .card .fqa-grid .fqa-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .fqa .card .fqa-grid .fqa-buttons {
+    flex-direction: column;
+  }
+}
+@media (min-width: 992px) {
+  .fqa .card .fqa-grid .fqa-buttons {
+    flex-direction: row;
+  }
+}
+.fqa .card .fqa-grid .btn-custom {
+  color: #FFFFFF;
+  background-color: #0056B3;
+}
+@media (min-width: 768px) {
+  .fqa .card .fqa-grid .btn-custom {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .fqa .card .fqa-grid .btn-custom {
+    width: auto;
+  }
+}
+.fqa .card .fqa-grid .btn-custom:hover {
+  background-color: #218838;
 }/*# sourceMappingURL=main.min.css.map */

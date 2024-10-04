@@ -1,0 +1,59 @@
+@use '../../base/variables' as v;
+@use '../../base/mixins' as m;
+
+
+// FQA
+
+.fqa {
+  padding-bottom: 6rem;
+
+  // CARD
+  .card {
+    border: none;
+
+    // GRID
+    .fqa-grid {
+      display: grid;
+      gap: 1.5rem;
+
+      @include m.breakpoint-up(md) {
+        grid-template-columns: 1fr 2fr;
+      }
+
+      .fqa-buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+        align-items: center;
+
+        @include m.breakpoint-up(md) {
+          flex-direction: column;
+        }
+
+        @include m.breakpoint-up(lg) {
+          flex-direction: row;
+        }
+      }
+
+      .btn-custom {
+        color: v.$white;
+        background-color: v.$primary-color;
+
+        @include m.breakpoint-up(md) {
+          width: 100%;
+        }
+
+        @include m.breakpoint-up(lg) {
+          width: auto;
+        }
+
+        &:hover {
+          background-color: v.$secondary-color;
+        }
+      }
+
+    }
+  }
+
+}
