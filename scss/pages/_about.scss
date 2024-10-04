@@ -140,9 +140,6 @@
                     margin-top: 1rem;
                 }
 
-                img {
-                    border-radius: 1.5rem;
-                }
 
                 @include m.breakpoint-up(md) {
                     &:nth-child(1) {
@@ -208,7 +205,9 @@
 
             }
 
-
+            img {
+                border-radius: 1.5rem;
+            }
 
         }
     }
