@@ -34,7 +34,7 @@ window.addEventListener('load', function () {
 
 
   // Obtener el botón
-  const btnUp = document.getElementById(".btn-up");
+  const btnUp = document.getElementById("btn-up");
 
   // Mostrar el botón cuando se hace scroll hacia abajo
   window.onscroll = function () {
@@ -49,6 +49,14 @@ window.addEventListener('load', function () {
       btnUp.style.display = "none";
     }
   }
+
+  // Cuando el usuario hace clic en el botón, desplázalo hacia arriba
+  btnUp.addEventListener('click', function () {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'  // Desplazamiento suave
+    });
+  });
 
 });
 

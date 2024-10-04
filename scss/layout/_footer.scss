@@ -4,7 +4,7 @@
 // FOOTER
 .footer {
 
-    background-color: v.$tertiary-color;
+    background-color: v.$accent-color;
 
     .footer-grid {
         display: grid;
@@ -20,9 +20,9 @@
             color: v.$primary-color;
 
             ul {
-                li{
-                    a{
-                        color: v.$accent-color;
+                li {
+                    a {
+                        color: v.$white;
                     }
                 }
             }
@@ -47,11 +47,11 @@
                 justify-content: space-between;
 
                 a {
-                    color: v.$accent-color;
+                    color: v.$white;
                     font-size: 2rem;
 
                     &:hover {
-                        color: lighten(v.$accent-color, 10%)
+                        color: lighten(v.$red, 10%)
                     }
                 }
             }

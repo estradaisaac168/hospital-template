@@ -2,7 +2,7 @@
 @use '../base/mixins' as m;
 
 
-.btn-up {
+#btn-up {
   display: none;
   position: fixed;
   bottom: 20px;
@@ -20,11 +20,11 @@
   font-size: 60px;
   text-decoration: none;
   // color: white;
-  color:  v.$primary-color;
+  color:  lighten(v.$secondary-color, 15%);
   transition: color 0.3s ease;
 
   &:hover {
-    color: darken(v.$primary-color, 10%);
+    color: lighten(v.$secondary-color, 10%);
 
   }
 

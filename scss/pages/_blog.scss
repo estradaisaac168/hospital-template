@@ -1,0 +1,66 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+
+.blog-posts {
+
+    .post-grid {
+        display: grid;
+        // grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 2rem;
+
+        @include m.breakpoint-up(md) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+
+        }
+
+        @include m.breakpoint-up(lg) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @include m.breakpoint-up(xl) {
+            gap: 2rem;
+        }
+
+        .card {
+            border: none;
+
+            img {
+                height: 300px;
+                object-fit: cover;
+                width: 100%;
+
+                @include m.breakpoint-up(md) {
+                    height: 200px;
+                }
+
+                @include m.breakpoint-up(lg) {
+                    height: 230px;
+                }
+
+                @include m.breakpoint-up(xl) {
+                    height: 250px;
+                }
+            }
+        }
+
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+
+            .description {
+                justify-content: flex-start;
+                flex-grow: 1;
+            }
+
+            .btn-primary {
+                color: v.$white;
+            }
+        }
+    }
+
+
+}

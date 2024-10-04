@@ -1,0 +1,34 @@
+.post-title {
+    font-size: 2rem;
+    margin-top: 20px;
+}
+.post-date {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+.post {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.post img {
+    border-radius: 5px;
+}
+.sidebar {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.sidebar h3 {
+    margin-bottom: 20px;
+}
+.sidebar a {
+    text-decoration: none;
+    color: #007bff;
+}
+.sidebar a:hover {
+    text-decoration: underline;
+}

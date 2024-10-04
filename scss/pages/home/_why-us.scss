@@ -24,7 +24,7 @@
 
         .card {
             border: none;
-            background-color: v.$secondary-color;
+            background-color: v.$accent-color;
             transition: transform 0.3s ease;
 
             padding: 3rem;
@@ -44,7 +44,7 @@
 
             &:hover {
                 transform: translateY(-1px);
-                background: darken(v.$secondary-color, 5%);
+                background: darken(v.$accent-color, 2%);
                 transition: all .3s ease-out;
             }
 
