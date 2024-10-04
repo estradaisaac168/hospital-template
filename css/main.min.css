@@ -12352,4 +12352,36 @@ p {
 }
 .testimonials .swiper .swiper-pagination-bullet-active {
   background: #218838 !important;
+}
+
+.hours {
+  position: relative;
+  height: 80vh;
+  background-image: url("../img/ambulance.webp");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  text-align: center;
+  color: white;
+}
+.content .btn-hour-custom {
+  transition: transform 0.3s ease;
+}
+.content .btn-hour-custom:hover {
+  transform: translateY(-1px);
 }/*# sourceMappingURL=main.min.css.map */
