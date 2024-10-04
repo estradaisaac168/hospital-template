@@ -12301,4 +12301,55 @@ p {
     grid-column: 2/3;
     grid-row: 4/5;
   }
+}
+
+.testimonials {
+  padding-bottom: 6rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.testimonials .swiper {
+  max-width: 60rem;
+  border-radius: 0.5rem;
+}
+@media (min-width: 992px) {
+  .testimonials .swiper {
+    max-width: 70rem;
+  }
+}
+.testimonials .swiper .swiper-wrapper {
+  min-height: 100%;
+}
+.testimonials .swiper .swiper-wrapper .testimonial {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.testimonials .swiper .swiper-wrapper .testimonial .quote-icon {
+  align-self: flex-start;
+  color: #ccc;
+  font-size: 5rem;
+}
+.testimonials .swiper .swiper-wrapper .testimonial .comment {
+  font-size: 1.6rem;
+  padding-top: 1rem;
+  text-align: center;
+  color: #333;
+  font-style: italic;
+  margin-bottom: 1rem;
+  flex-grow: 2;
+}
+.testimonials .swiper .swiper-wrapper .testimonial .client-name {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #555;
+}
+.testimonials .swiper .swiper-pagination-bullet-active {
+  background: #218838 !important;
 }/*# sourceMappingURL=main.min.css.map */

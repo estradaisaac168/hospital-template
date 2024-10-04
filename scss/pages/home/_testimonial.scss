@@ -1,0 +1,67 @@
+@use '../../base/variables' as v;
+@use '../../base/mixins' as m;
+
+
+// TESTIMONIAL
+.testimonials {
+  padding-bottom: 6rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+  .swiper {
+    max-width: 60rem;
+    border-radius: 0.5rem;
+
+    @include m.breakpoint-up(lg) {
+      max-width: 70rem;
+    }
+
+    .swiper-wrapper {
+      min-height: 100%;
+
+      .testimonial {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem;
+        background-color: v.$white;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+        .quote-icon {
+          align-self: flex-start;
+          color: #ccc;
+          font-size: 5rem;
+          // flex-grow: 1;
+        }
+
+        .comment {
+          font-size: 1.6rem;
+          padding-top: 1rem;
+          text-align: center;
+          color: #333;
+          font-style: italic;
+          margin-bottom: 1rem;
+          flex-grow: 2;
+        }
+
+        .client-name {
+          font-size: 1.4rem;
+          font-weight: bold;
+          // flex-grow: 1;
+          color: #555;
+        }
+      }
+
+
+    }
+
+    // SWIPER NAVIGATION BUTTONS
+    .swiper-pagination-bullet-active {
+      background: v.$secondary-color !important;
+    }
+
+  }
+}
